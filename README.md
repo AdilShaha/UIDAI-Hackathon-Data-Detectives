@@ -1,39 +1,26 @@
-# 🕵️‍♂️ Bio-Gap Radar: UIDAI Hackathon 2026
-**Team Name:** Data Detectives  
-**Track:** Demographic & Biometric Trends
+# Project: Bio-Gap Radar (By Team Data Detectives)
+# BCA 1st Year - UIDAI Hackathon 2026
 
-## 👋 About Our Project
-Hi! We are **Team Data Detectives**, 1st-year BCA students. 
-For this hackathon, we tried to solve a specific problem: **"Silent Non-Compliance."**
+Hey! We are Team Data Detectives. Being in our 1st year of BCA, we really wanted to find a real-world problem rather than just doing some basic coding. While we were going through the UIDAI datasets, we found something very strange which we now call the "Silent Gap."
 
-We noticed that many children (Age 5-17) visit Aadhaar centers to update their Name or Address (Demographic details) but often forget to update their **Biometrics**, which is mandatory. Our project uses data to find exactly which states and districts have the highest number of such "missing updates."
+Basically, we saw that lots of kids (between 5 to 17 years) are visiting Aadhaar centers to change their phone numbers or home addresses. But the sad part is, they are leaving the center without doing their Mandatory Biometric Update (MBU), even though they are already there at the counter! This is a huge missed opportunity for the system.
 
-## 💡 How It Works (The Logic)
-We didn't use complex AI, just smart data analysis using **Python**:
-1.  **The Formula:** We calculated `Gap = (People who updated Demographics) - (People who updated Biometrics)`.
-2.  **The Result:** If the Gap is high, it means people are visiting centers but leaving without the mandatory update.
-3.  **Visualization:** We created graphs to show these "Red Zones" so UIDAI can plan targeted camps there.
 
-## Tech Stack Used
-- **Language:** Python
-- **Libraries:** Pandas (for data cleaning & merging), Seaborn/Matplotlib (for graphs)
-- **Technique:** We used **Data Sampling** because the dataset had 7.5 Lakh+ rows, and this made our code run super fast!
 
-## How to Run the Code
-If you want to test our project, please follow these steps:
+### How our logic works:
+We kept things very simple and used Python to find the "Red Zones." 
+First, we calculated the Gap by subtracting Biometric updates from Demographic updates. If the Gap is big in any district, it means the center is busy but the mandatory work is being ignored. 
+Then, we used these numbers to make charts that show UIDAI exactly where they need to tell their operators to be more careful.
 
-1.  Make sure you have the CSV files (`demographic.csv`, `biometric.csv`, `enrolment.csv`) in the same folder.
-2.  Install required libraries (if not already installed):
-    ```bash
-    pip install pandas matplotlib seaborn
-    ```
-3.  Run our script:
-    ```bash
-    python final_analysis.py
-    ```
-4.  The code will generate:
-    - Two HD Graphs (saved as PNG).
-    - A `final_hackathon_report.csv` file with the results.
 
----
-*Submitted by Team Data Detectives for UIDAI Hackathon 2026.*
+
+### Tech stuff we used:
+- We used Python and Pandas to handle the 7.5 Lakh rows. Honestly, our laptops were lagging a lot, so we used "Data Sampling" to make the code run faster.
+- For the visuals, we used Seaborn and Matplotlib to create graphs that highlight the problem districts.
+
+### How to run the Radar:
+1. Put the demographic, biometric, and enrolment CSV files in the folder.
+2. Just run "python final_analysis.py".
+3. You will get the final report and two graphs immediately.
+
+It was a great experience for us to see how a little bit of data analysis can help solve such a big problem for the government. We really hope our Bio-Gap Radar idea helps out!
